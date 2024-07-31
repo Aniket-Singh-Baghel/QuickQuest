@@ -1,0 +1,149 @@
+body {
+  background-color: rgb(9, 58, 55);
+}
+
+.intro {
+  width: 50vw;
+  height: auto;
+  background-color: rgb(13, 19, 13);
+  margin: 0 auto;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Adjust gap between cards as needed */
+  justify-content: space-between; /* Space out cards evenly */
+}
+.main {
+  margin: 10px auto;
+}
+
+h1 {
+  color: white;
+}
+
+.desc {
+  color: rgb(255, 255, 255);
+}
+
+h3 {
+  color: rgb(55, 184, 184);
+}
+
+input {
+  border-radius: 0.3rem;
+  outline: none;
+  padding: 0.2rem 0.5rem;
+  background-color: transparent;
+  border: 2px solid rgb(55, 184, 184);
+  color: white;
+}
+
+button {
+  margin: 0 0.5rem;
+  width: 4rem;
+  height: 1.7rem;
+  background-color: rgb(55, 184, 184);
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.challenge {
+  width: calc(
+    50% - 16px
+  ); /* Adjust width to take up half the container minus the gap */
+  height: 35vh;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  background-color: rgb(55, 184, 184);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(13, 19, 13);
+}
+
+.title {
+  color: rgb(13, 19, 13);
+}
+
+.timer {
+  border: 1px solid rgb(46, 66, 46);
+  width: 7vw;
+  height: 4vh;
+  text-align: center;
+  border-radius: 0.4rem;
+  margin-top: -0.5rem;
+}
+
+.start {
+  width: 10vw;
+  height: 3rem;
+  margin-bottom: 1rem;
+  background-color: rgb(13, 19, 13);
+  color: white;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.status {
+  margin-top: -0.5rem;
+}
+.status-running {
+  animation: blink 1s step-start infinite;
+  color: rgb(252, 255, 90);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 100%;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 100%;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 100%;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 100%;
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  .challenge {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 16px;
+  }
+}
